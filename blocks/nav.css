@@ -1,0 +1,26 @@
+@import "../vendor/fonts.css";
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav__logo {
+  width: 254px;
+  height: 70px;
+  padding: 34px 0 90px 0;
+}
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .nav__logo {
+    width: 220px;
+    height: auto;
+    padding: 34px 0 80px 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 544px) {
+  .nav {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,7 +1,4 @@
 @import "../vendor/fonts.css";
-body {
-  background-color: #2a2c2f;
-}
 .footer {
   display: flex;
   justify-content: center;

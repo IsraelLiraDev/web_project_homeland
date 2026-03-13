@@ -1,0 +1,19 @@
+@import "../vendor/fonts.css";
+.page {
+  min-width: 768px;
+  max-width: 1280px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter", serif;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .page {
+    min-width: auto;
+    max-width: 928px;
+    margin: 0 auto;
+  }
