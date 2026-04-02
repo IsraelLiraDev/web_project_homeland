@@ -1,0 +1,166 @@
+@import "../vendor/fonts.css";
+
+.place {
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.place__contenido {
+  display: flex;
+  flex-direction: column;
+  max-width: 984px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.place__city {
+  margin: 0;
+  display: flex;
+}
+
+.place__city_title {
+  margin: 0;
+  padding-top: 92px;
+  width: 460px;
+  height: auto;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  display: flex;
+  align-items: end;
+}
+
+.place__artistas {
+  width: 456px;
+  height: 67px;
+  margin: 0;
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  padding-left: 40px;
+}
+.place__city_artista_cat {
+  margin: 0;
+  padding-bottom: 8px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.place__city_artista_text.name1,
+.place__city_artista_text.name2 {
+  margin: 0;
+  font-size: 18px;
+}
+.place__texts {
+  margin: 0;
+  display: flex;
+  padding-top: 48px;
+  max-width: 984px;
+}
+.place__texts_image {
+  margin: 0;
+  width: 460px;
+  height: 460px;
+  padding-bottom: 48px;
+  object-fit: cover;
+}
+
+.place__texts_artista {
+  margin: 0;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.place__texts_artista_text {
+  margin: 0;
+  padding-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.63;
+  color: #dddddd;
+}
+.place__texts_pay_button {
+  margin: 0;
+  width: 356.08px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #0278fe, #003a7b);
+  transition: 0.3s;
+}
+
+.place__texts_pay_button:hover {
+  opacity: 0.85;
+}
+/* =============================
+   🔹 MOBILE
+============================= */
+@media screen and (max-width: 767px) {
+  .place__contenido {
+    padding: 0 16px;
+  }
+
+  .place__city {
+    flex-direction: column;
+  }
+
+  .place__city_title {
+    width: 100%;
+    font-size: 32px;
+    line-height: 35px;
+    padding-top: 64px;
+  }
+
+  .place__artistas {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 16px;
+  }
+
+  .place__texts {
+    flex-direction: column;
+    padding-top: 32px;
+  }
+
+  .place__texts_image {
+    width: 100%;
+    height: auto;
+  }
+
+  .place__texts_artista {
+    padding-left: 0;
+    padding-top: 24px;
+  }
+
+  .place__texts_pay_button {
+    width: 100%;
+    height: 48px;
+  }
+  .place__texts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .place__image {
+    display: contents;
+  }
+
+  .place__texts_image {
+    order: 1;
+  }
+
+  .place__texts_artista {
+    order: 2;
+  }
+
+  .place__texts_pay_button {
+    order: 3;
+    margin-top: 24px;
+  }
+}
