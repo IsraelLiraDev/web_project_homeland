@@ -1,5 +1,15 @@
 @import "../vendor/fonts.css";
 
+/* =============================
+   GALLERY
+============================= */
+.gallery__grid {
+  /* estilos da grade da galeria */
+}
+
+/* =============================
+   PLACE
+============================= */
 .place {
   margin: 0 auto;
   padding-bottom: 90px;
@@ -19,7 +29,8 @@
   display: flex;
 }
 
-.place__city_title {
+/* Elemento: título da cidade */
+.place__city-title {
   margin: 0;
   padding-top: 92px;
   width: 460px;
@@ -28,9 +39,10 @@
   font-weight: 900;
   line-height: 76px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 }
 
+/* Elemento base: artista */
 .place__artistas {
   width: 456px;
   height: 67px;
@@ -40,8 +52,13 @@
   flex-direction: column;
   padding-left: 40px;
 }
-.place__city_artista_cat {
+
+.place__artista {
   margin: 0;
+}
+
+/* Modificador: categoria */
+.place__artista--cat {
   padding-bottom: 8px;
   font-size: 12px;
   letter-spacing: 2px;
@@ -49,18 +66,27 @@
   text-transform: uppercase;
 }
 
-.place__city_artista_text.name1,
-.place__city_artista_text.name2 {
-  margin: 0;
+/* Modificador: nome */
+.place__artista--name {
   font-size: 18px;
 }
+
+/* Elemento: bloco de textos */
 .place__texts {
   margin: 0;
   display: flex;
   padding-top: 48px;
   max-width: 984px;
 }
-.place__texts_image {
+
+/* Elemento: bloco de imagem + botão */
+.place__image {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Elemento: foto */
+.place__image-photo {
   margin: 0;
   width: 460px;
   height: 460px;
@@ -68,21 +94,8 @@
   object-fit: cover;
 }
 
-.place__texts_artista {
-  margin: 0;
-  padding-left: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.place__texts_artista_text {
-  margin: 0;
-  padding-bottom: 25px;
-  font-size: 18px;
-  line-height: 1.63;
-  color: #dddddd;
-}
-.place__texts_pay_button {
+/* Elemento: botão de compra */
+.place__button {
   margin: 0;
   width: 356.08px;
   height: 48px;
@@ -92,14 +105,32 @@
   color: #fff;
   cursor: pointer;
   background: linear-gradient(90deg, #0278fe, #003a7b);
-  transition: 0.3s;
+  transition: opacity 0.3s;
 }
 
-.place__texts_pay_button:hover {
+.place__button:hover {
   opacity: 0.85;
 }
+
+/* Elemento: bloco de descrição textual */
+.place__description {
+  margin: 0;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Elemento: parágrafo de descrição */
+.place__description-text {
+  margin: 0;
+  padding-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.63;
+  color: #dddddd;
+}
+
 /* =============================
-   🔹 MOBILE
+   MOBILE
 ============================= */
 @media screen and (max-width: 767px) {
   .place__contenido {
@@ -110,7 +141,7 @@
     flex-direction: column;
   }
 
-  .place__city_title {
+  .place__city-title {
     width: 100%;
     font-size: 32px;
     line-height: 35px;
@@ -128,38 +159,25 @@
     padding-top: 32px;
   }
 
-  .place__texts_image {
-    width: 100%;
-    height: auto;
-  }
-
-  .place__texts_artista {
-    padding-left: 0;
-    padding-top: 24px;
-  }
-
-  .place__texts_pay_button {
-    width: 100%;
-    height: 48px;
-  }
-  .place__texts {
-    display: flex;
-    flex-direction: column;
-  }
-
   .place__image {
     display: contents;
   }
 
-  .place__texts_image {
+  .place__image-photo {
+    width: 100%;
+    height: auto;
     order: 1;
   }
 
-  .place__texts_artista {
+  .place__description {
+    padding-left: 0;
+    padding-top: 24px;
     order: 2;
   }
 
-  .place__texts_pay_button {
+  .place__button {
+    width: 100%;
+    height: 48px;
     order: 3;
     margin-top: 24px;
   }
