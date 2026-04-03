@@ -51,7 +51,7 @@
 }
 
 /* Modificador: categoria */
-.place__artista--cat {
+.place__artista_cat {
   padding-bottom: 8px;
   font-size: 12px;
   letter-spacing: 2px;
@@ -60,7 +60,7 @@
 }
 
 /* Modificador: nome */
-.place__artista--name {
+.place__artista_name {
   font-size: 18px;
 }
 
